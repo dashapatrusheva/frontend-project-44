@@ -1,7 +1,9 @@
-var HTTPServer = require('http-server');
+// eslint-disable-next-line linebreak-style
+// eslint-disable-next-line no-undef
+import HTTPServer from 'http-server';
 
-var httpServer = new HTTPServer({
-  root: './public'
+const httpServer = new HTTPServer({
+  root: './public',
 });
 
 httpServer.start();

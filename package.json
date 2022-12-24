@@ -2,6 +2,7 @@
   "name": "frontend-project-44",
   "description": "[![Actions Status](https://github.com/dashapatrusheva/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/dashapatrusheva/frontend-project-44/actions)",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +21,14 @@
   },
   "homepage": "https://github.com/dashapatrusheva/frontend-project-44#readme",
   "dependencies": {
-    "http-server": "^14.1.1"
+    "eslint-config-airbnb-base": "^15.0.0",
+    "http-server": "^14.1.1",
+    "readline-sync": "^1.4.10"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.7",
+    "jest": "^29.3.1"
+  }
 }
