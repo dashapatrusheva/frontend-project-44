@@ -1,5 +1,5 @@
 {
-  "name": "frontend-project-44",
+  "name": "dasha-brain-games17",
   "description": "[![Actions Status](https://github.com/dashapatrusheva/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/dashapatrusheva/frontend-project-44/actions)",
   "version": "1.0.0",
   "type": "module",
@@ -13,7 +13,8 @@
   },
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "author": "",
   "license": "ISC",

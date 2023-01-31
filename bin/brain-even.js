@@ -1,8 +1,8 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
-
 import userName from '../src/cli.js';
 
-const evenGame = () => {
+const Even = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const number = Math.random();
@@ -13,11 +13,11 @@ const evenGame = () => {
     if (checking1 === true || checking2 === true) {
       console.log('Correct!');
     } else {
-      const opposite = (answerUser === 'yes' ? 'no' : 'yes');
-      const errorMessage = `"${answerUser}" is wrong answer ;(. Correct answer was '${opposite}'. /n Let's try again, ${userName}!`;
-      return errorMessage;
+      const answer = (answerUser === 'yes' ? 'no' : 'yes');
+      const wrongAnswer = `"${answerUser}" is wrong answer ;(. Correct answer was '${answer}'. /n Let's try again, ${userName}!`;
+      return wrongAnswer;
     }
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default evenGame;
+export default Even;
