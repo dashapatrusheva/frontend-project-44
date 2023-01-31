@@ -20,4 +20,5 @@ const Even = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
+console.log('test');
 export default Even;
