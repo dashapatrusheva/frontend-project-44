@@ -1,4 +1,3 @@
-#!/usr/bin/env node
-import readlineSync from 'readline-sync';
+import calcGame from '../src/games/calc.js';
 
-import userName from '../src/cli.js';
+calcGame();
