@@ -6,13 +6,16 @@ const actions = ['+', '-', '*'];
 
 const Calc = (action, randNumber1, randNumber2) => {
   if (action === actions[0]) {
-    return String(randNumber1 + randNumber2);
+    const result1 = String(randNumber1 + randNumber2);
+    return result1;
   }
   if (action === actions[1]) {
-    return String(randNumber1 - randNumber2);
+    const result2 = String(randNumber1 - randNumber2);
+    return result2;
   }
   if (action === actions[2]) {
-    return String(randNumber1 * randNumber2);
+    const result3 = String(randNumber1 * randNumber2);
+    return result3;
   }
 };
 

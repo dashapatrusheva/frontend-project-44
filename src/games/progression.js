@@ -6,13 +6,16 @@ const description = 'What number is missing in the progression?';
 
 const Prog = (arr, num1, num2) => {
   if (String(arr[num1]) === String(arr[0])) {
-    return String(arr[1] - num2);
+    const result1 = String(arr[1] - num2);
+    return result1;
   }
   if (String(arr[num1]) === String(arr[arr.length - 1])) {
-    return String(arr[arr.length - 2] + num2);
+    const result2 = String(arr[arr.length - 2] + num2);
+    return result2;
   }
   if (String(arr[num1 + 1] - arr[num1 - 1]) === String(num2 * 2)) {
-    return String(arr[num1 - 1] + num2);
+    const result3 = String(arr[num1 - 1] + num2);
+    return result3;
   }
 };
 
