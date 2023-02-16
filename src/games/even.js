@@ -2,13 +2,15 @@
 import startGame from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+const currAnswer1 = 'yes';
+const currAnswer2 = 'no';
 
 const Even = (randNumber) => {
   if (randNumber % 2 === 0) {
-    return 'yes';
+    return currAnswer1;
   }
   if (randNumber % 2 !== 0) {
-    return 'no';
+    return currAnswer2;
   }
 };
 
