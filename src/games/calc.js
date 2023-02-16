@@ -14,7 +14,6 @@ const Calc = (action, randNumber1, randNumber2) => {
   if (action === actions[2]) {
     return String(randNumber1 * randNumber2);
   }
-  console.log(`Undefined operator: '${action}'!`);
 };
 
 const CalcQuest = () => {
