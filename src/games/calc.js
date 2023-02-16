@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import readlineSync, { question } from 'readline-sync';
 import startGame from '../index.js';
 
 const description = 'What is the result of the expression?';

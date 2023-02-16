@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
 import startGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';

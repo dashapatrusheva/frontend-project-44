@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 /* eslint-disable no-plusplus */
-import readlineSync from 'readline-sync';
 import startGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
