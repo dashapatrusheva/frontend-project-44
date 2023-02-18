@@ -5,10 +5,6 @@ const description = 'What is the result of the expression?';
 const actions = ['+', '-', '*'];
 
 const Calc = (action, randNumber1, randNumber2) => {
-  if (action === actions[0]) {
-    const result1 = String(randNumber1 + randNumber2);
-    return result1;
-  }
   if (action === actions[1]) {
     const result2 = String(randNumber1 - randNumber2);
     return result2;
@@ -17,6 +13,7 @@ const Calc = (action, randNumber1, randNumber2) => {
     const result3 = String(randNumber1 * randNumber2);
     return result3;
   }
+  return String(randNumber1 + randNumber2);
 };
 
 const CalcQuest = () => {

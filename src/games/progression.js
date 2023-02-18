@@ -5,10 +5,6 @@ import startGame from '../index.js';
 const description = 'What number is missing in the progression?';
 
 const Prog = (arr, num1, num2) => {
-  if (String(arr[num1]) === String(arr[0])) {
-    const result1 = String(arr[1] - num2);
-    return result1;
-  }
   if (String(arr[num1]) === String(arr[arr.length - 1])) {
     const result2 = String(arr[arr.length - 2] + num2);
     return result2;
@@ -17,6 +13,7 @@ const Prog = (arr, num1, num2) => {
     const result3 = String(arr[num1 - 1] + num2);
     return result3;
   }
+  return String(arr[1] - num2);
 };
 
 const isProg = () => {
@@ -36,7 +33,6 @@ const isProg = () => {
 };
 
 const gameProgression = () => {
-  const res = startGame(description, isProg);
-  return res;
+  startGame(description, isProg);
 };
 export default gameProgression;

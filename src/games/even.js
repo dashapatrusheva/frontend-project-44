@@ -6,12 +6,10 @@ const currAnswer1 = 'yes';
 const currAnswer2 = 'no';
 
 const Even = (randNumber) => {
-  if (randNumber % 2 === 0) {
-    return currAnswer1;
-  }
   if (randNumber % 2 !== 0) {
     return currAnswer2;
   }
+  return currAnswer1;
 };
 
 const evenQuest = () => {
