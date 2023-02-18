@@ -8,6 +8,7 @@ const startGame = (description, freshRound) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(description);
+  const result = `Congratulations, ${userName}!`;
   for (let i = 0; i < rounds; i += 1) {
     const [quest, corrAnswer] = freshRound();
     console.log(`Question: ${quest}`);
@@ -18,7 +19,7 @@ const startGame = (description, freshRound) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${userName}!`);
-  return description;
+  console.log(result);
+  return [description, result];
 };
 export default startGame;
