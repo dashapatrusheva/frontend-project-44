@@ -36,6 +36,7 @@ const isProg = () => {
 };
 
 const gameProgression = () => {
-  startGame(description, isProg);
+  const res = startGame(description, isProg);
+  return res;
 };
 export default gameProgression;
